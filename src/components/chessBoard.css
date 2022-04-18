@@ -1,0 +1,24 @@
+.chessboard {
+    width: 800px;
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(8, 100px);
+    margin: auto;
+}
+.chessboard #tile {
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+}
+.grabbable {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+.grabbable:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
